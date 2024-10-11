@@ -1,0 +1,75 @@
+/* Dashboard.scss */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topbar {
+  background-color: #2c3e50; /* Cor de fundo da barra superior */
+  color: #ecf0f1; /* Cor do texto */
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+}
+
+.topbar button {
+  background-color: #34495e; /* Cor do botão */
+  color: #ecf0f1; /* Cor do texto do botão */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: background-color 0.3s;
+}
+
+.topbar button:hover {
+  background-color: #1abc9c; /* Cor de fundo ao passar o mouse */
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 250px;
+  max-width: 250px;
+  transition: width 0.3s;
+  background-color: #2c3e50; /* Cor de fundo mais elegante */
+  color: #ecf0f1; /* Cor do texto com melhor contraste */
+  padding: 10px;
+}
+
+.sidebar.closed {
+  width: 50px;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: #ecf0f1; /* Cor do texto dos links */
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #1abc9c; /* Cor de fundo ao passar o mouse */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ecf0f1; /* Cor de fundo do conteúdo */
+  color: #2c3e50; /* Cor do texto do conteúdo */
+}

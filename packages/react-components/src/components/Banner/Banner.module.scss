@@ -1,0 +1,79 @@
+
+// Carousel.module.scss
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel__imageContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel__progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: width 0.1s linear;
+  }
+  
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel__button--left {
+    left: 10px;
+    z-index: 10;
+  }
+  
+  .carousel__button--right {
+    right: 10px;
+    z-index: 10;
+  }
+  
+  .carousel__button:focus {
+    outline: none;
+  }
+  
+  .carousel__indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+  }
+  
+  .carousel__indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .carousel__indicator.active {
+    background-color: rgba(255, 255, 255, 1);
+  }
